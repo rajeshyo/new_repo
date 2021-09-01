@@ -19,14 +19,14 @@ import {  faChevronDown, faTimes } from '@fortawesome/free-solid-svg-icons';
 //images 
 import logo from "../components/assets/img/logo.png"
 
-import Home from './Home';
-import Maternity from './Maternity';
+import Home from './Home/Home';
+import Maternity from './Maternity/Maternity';
 import Diagnostics from './Diagnostics/Diagnostics';
 
 // import About from './About'
 import Blog from './Blog'
-import Blog1 from './Blog1'
-import Blog2 from './Blog2'
+import Blog1 from './Blogs/BlogPage'
+import Blog2 from './Blogs/BlogPageTwo'
 
 export default class NavbarComp extends Component {
     render() {
@@ -99,12 +99,12 @@ export default class NavbarComp extends Component {
 </header>
 
                     <Switch>
-                    {/* <Route path="/blog1">
+                    <Route path="/blog">
                             <Blog1 />
                         </Route>
                         <Route path="/blog2">
-                            <Blog1 />
-                        </Route> */}
+                            <Blog2 />
+                        </Route>
                     <Route path="/blogs">
                             <Blog />
                         </Route>
